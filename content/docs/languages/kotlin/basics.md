@@ -37,8 +37,8 @@ updating.
 
 ### Example code and setup
 
-The example code for our tutorial is in
-[grpc/grpc-kotlin/examples/src/main/kotlin/io/grpc/examples/routeguide](https://github.com/grpc/grpc-kotlin/tree/master/examples/src/main/kotlin/io/grpc/examples/routeguide).
+The example code for our tutorial is stored under
+[grpc/grpc-kotlin/examples](https://github.com/grpc/grpc-kotlin/tree/master/examples).
 To download the example, clone the latest release in `grpc-kotlin` repository by
 running the following command:
 
@@ -49,7 +49,7 @@ $ git clone https://github.com/grpc/grpc-kotlin.git
 Then change to the example's main source folder:
 
 ```sh
-$ cd grpc-kotlin/examples/src/main/kotlin/io/grpc/examples/routeguide
+$ cd grpc-kotlin/examples
 ```
 
 ### Defining the service
@@ -59,7 +59,7 @@ define the gRPC *service* and the method *request* and *response* types using
 [protocol
 buffers](https://developers.google.com/protocol-buffers/docs/overview). You can
 see the complete .proto file in
-[grpc-kotlin/examples/src/main/proto/route_guide.proto](https://github.com/grpc/grpc-kotlin/blob/master/examples/src/main/proto/route_guide.proto).
+[grpc-kotlin/examples/src/main/proto/route_guide.proto](https://github.com/grpc/grpc-kotlin/blob/master/examples/protos/src/main/proto/io/grpc/examples/routeguide/route_guide.proto).
 
 To define a service, you specify a named `service` in the .proto file:
 
@@ -177,7 +177,7 @@ There are two parts to making our `RouteGuide` service do its job:
   service responses.
 
 You can find our example `RouteGuide` server in
-[grpc-kotlin/examples/src/main/kotlin/io/grpc/examples/routeguide/RouteGuideServer.kt](https://github.com/grpc/grpc-kotlin/blob/master/examples/src/main/kotlin/io/grpc/examples/routeguide/RouteGuideServer.kt).
+[grpc-kotlin/examples/src/main/kotlin/io/grpc/examples/routeguide/RouteGuideServer.kt](https://github.com/grpc/grpc-kotlin/blob/master/examples/server/src/main/kotlin/io/grpc/examples/routeguide/RouteGuideServer.kt).
 Let's take a closer look at how it works.
 
 #### Implementing RouteGuide
@@ -359,7 +359,7 @@ To do this, we:
 
 In this section, we'll look at creating a client for our `RouteGuide`
 service. You can see our complete example client code in
-[grpc-kotlin/examples/src/main/kotlin/io/grpc/examples/routeguide/RouteGuideClient.kt](https://github.com/grpc/grpc-kotlin/blob/master/examples/src/main/kotlin/io/grpc/examples/routeguide/RouteGuideClient.kt).
+[grpc-kotlin/examples/src/main/kotlin/io/grpc/examples/routeguide/RouteGuideClient.kt](https://github.com/grpc/grpc-kotlin/blob/master/examples/client/src/main/kotlin/io/grpc/examples/routeguide/RouteGuideClient.kt).
 
 #### Instantiating a stub
 
